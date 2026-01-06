@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Recognition from Speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Emotion Recognition from Speech</h1>
+
+    <input type="file" id="audioFile" accept="audio/*">
+    <button onclick="analyzeEmotion()">Analyze Emotion</button>
+
+    <div id="output" class="output hidden">
+        <h2>Detected Emotion</h2>
+        <p id="emotion"></p>
+        <p id="confidence"></p>
+
+        <h3>Extracted Features</h3>
+        <ul>
+            <li>MFCC Mean: <span id="mfcc"></span></li>
+            <li>Pitch Energy: <span id="pitch"></span></li>
+            <li>Signal Energy: <span id="energy"></span></li>
+        </ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
